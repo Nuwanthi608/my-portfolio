@@ -43,8 +43,9 @@ function Home() {
             </div>
             
             <div className="social-buttons">
-              <a href="https://github.com/Nuwanthi608" target="_blank" rel="noreferrer" className="social-icon">💻 GitHub</a>
-              <a href="#" className="social-icon">🔗 LinkedIn</a>
+            <a href="https://github.com/Nuwanthi608" target="_blank" rel="noreferrer" className="social-icon">💻 GitHub</a>
+  
+            <a href="https://www.linkedin.com/in/nuwanthi-piyathilaka-396a1335b/" target="_blank" rel="noreferrer" className="social-icon">🔗 LinkedIn</a>
             </div>
           </div>
         </div>
