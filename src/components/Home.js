@@ -28,9 +28,7 @@ function Home() {
               <span className="name-highlight">Nuwanthi Piyathilaka</span>
             </h1>
             
-            <div className="student-badge">
-              🎓 IT Student | Institute of Technology, University of Moratuwa
-            </div>
+            
             
             <p className="home-description">
               I'm an IT student at University of Moratuwa. I love building websites and learning new technologies. 

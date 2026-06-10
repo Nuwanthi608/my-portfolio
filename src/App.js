@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';  // ← මේ line එක එකතු කරන්න
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />  {/* ← මේ line එක එකතු කරන්න */}
       </div>
     </Router>
   );

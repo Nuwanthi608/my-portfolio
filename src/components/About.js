@@ -7,9 +7,18 @@ function About() {
         <h2>About Me</h2>
         
         <h3>📚 Educational Background</h3>
-        <p>I am an IT student at the
-        Institute of Technology,
-        University of Moratuwa.</p>
+        <p>🎓 I'm currently studying Information Technology at Institute of Technology, University of Moratuwa,</p>
+        
+       
+        <h3>✅ Completed Courses</h3>
+        <div className="completed-course">
+         
+          <p className="course-detail">
+            <strong>Programming in Python - Python for Beginners</strong><br />
+            I have successfully completed a Python programming course at University of Moratuwa through their Open Learning Platform.
+            
+          </p>
+        </div>
         
         <h3>💻 Technical Skills</h3>
         <ul className="skills-list">
@@ -19,6 +28,8 @@ function About() {
           <li>Node.js</li>
           <li>Python</li>
           <li>Git/GitHub</li>
+          <li>Java</li>
+          <li>MySQL</li>
         </ul>
         
         <div className="aspirations">
