@@ -6,24 +6,32 @@ const projects = [
     title: "Smart Agriculture System",
     description: "Farm testing management system that helps farmers monitor soil conditions, crop health, and weather patterns for better agricultural decisions.",
     technologies: ["React", "Node.js", "MongoDB", "IoT"],
-    githubLink: "https://github.com/Nuwanthi608/smart-agriculture-system",
+    githubLink: "https://github.com/SahanHasmitha/project-FMRC.git",
     icon: "🌾"
   },
   {
     id: 2,
-    title: "Library Management System",
-    description: "Java based library system for managing books, members, borrowing records, and returns with an intuitive interface.",
-    technologies: ["Java", "JavaFX", "MySQL", "JDBC"],
-    githubLink: "https://github.com/Nuwanthi608/library-management-system",
-    icon: "📚"
+    title: "Student Event Management System",
+    description: "Web-based application that enables students to browse and register for university events while allowing administrators to manage event details and participant registrations.",
+    technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    githubLink: "https://github.com/Nuwanthi608/student-event-management.git",
+    icon: "📅"
   },
   {
     id: 3,
-    title: "Student Management System",
-    description: "Student records management application to handle enrollments, grades, attendance, and academic performance tracking.",
-    technologies: ["Java", "Spring Boot", "Hibernate", "MySQL"],
-    githubLink: "https://github.com/Nuwanthi608/student-management-system",
-    icon: "🎓"
+    title: "Smart Student Management System",
+    description: "Python-based student management system with grading, reports and file handling. Manage student records, results, and generate reports efficiently.",
+    technologies: ["Python", "File Handling", "Reports"],
+    githubLink: "https://github.com/Nuwanthi608/smart-student-management.git",
+    icon: "👨‍🎓"
+  },
+  {
+    id: 4,
+    title: "Calculator App",
+    description: "A beginner-friendly calculator web application with basic arithmetic operations built using HTML, CSS and JavaScript.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    githubLink: "https://github.com/Nuwanthi608/Calculator-App.git",
+    icon: "🧮"
   }
 ];
 
