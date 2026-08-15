@@ -19,14 +19,6 @@ const projects = [
   },
   {
     id: 3,
-    title: "Smart Student Management System",
-    description: "Python-based student management system with grading, reports and file handling. Manage student records, results, and generate reports efficiently.",
-    technologies: ["Python", "File Handling", "Reports"],
-    githubLink: "https://github.com/Nuwanthi608/smart-student-management.git",
-    icon: "👨‍🎓"
-  },
-  {
-    id: 4,
     title: "Calculator App",
     description: "A beginner-friendly calculator web application with basic arithmetic operations built using HTML, CSS and JavaScript.",
     technologies: ["HTML", "CSS", "JavaScript"],
