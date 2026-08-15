@@ -32,7 +32,7 @@ function Home() {
             
             <p className="home-description">
               I'm an IT student at University of Moratuwa. I love building websites and learning new technologies. 
-              Looking for internship opportunities to improve my skills and contribute to real projects.
+              
             </p>
             
             <div className="home-buttons">
