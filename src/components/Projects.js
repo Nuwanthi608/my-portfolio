@@ -3,27 +3,27 @@ import React from 'react';
 const projects = [
   {
     id: 1,
-    title: "Smart Agriculture System",
-    description: "Farm testing management system that helps farmers monitor soil conditions, crop health, and weather patterns for better agricultural decisions.",
-    technologies: ["React", "Node.js", "MongoDB", "IoT"],
-    githubLink: "https://github.com/SahanHasmitha/project-FMRC.git",
-    icon: "🌾"
+    title: "RepairTrack",
+    description: "A job tracking system for phone and laptop repair shops. Customers can check repair status with a job number, receive SMS updates on status changes, and view spare part cost breakdowns. Built with React, Node.js/Express & MySQL.",
+    technologies: ["React", "Node.js", "Express", "MySQL"],
+    githubLink: "https://github.com/Nuwanthi608/RepairTrack.git",
+    icon: "🔧"
   },
   {
     id: 2,
+    title: "Smart Agriculture System",
+    description: "Farm testing management system that helps farmers monitor soil conditions, crop health, and weather patterns for better agricultural decisions.",
+    technologies: ["React", "Node.js", "MongoDB", "IoT"],
+    githubLink: "https://github.com/SahanHasmitha/Smart-Agricultural-Machinery-Testing-And-Planning-System-FMRC.git",
+    icon: "🌾"
+  },
+  {
+    id: 3,
     title: "Student Event Management System",
     description: "Web-based application that enables students to browse and register for university events while allowing administrators to manage event details and participant registrations.",
     technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
     githubLink: "https://github.com/Nuwanthi608/student-event-management.git",
     icon: "📅"
-  },
-  {
-    id: 3,
-    title: "Smart Student Management System",
-    description: "Python-based student management system with grading, reports and file handling. Manage student records, results, and generate reports efficiently.",
-    technologies: ["Python", "File Handling", "Reports"],
-    githubLink: "https://github.com/Nuwanthi608/smart-student-management.git",
-    icon: "👨‍🎓"
   },
   {
     id: 4,
@@ -32,6 +32,14 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript"],
     githubLink: "https://github.com/Nuwanthi608/Calculator-App.git",
     icon: "🧮"
+  },
+  {
+    id: 5,
+    title: "FinTrack",
+    description: "Personal Expense Tracker built to manage daily financial records, authentication, and view expense reports.",
+    technologies: ["React", "JavaScript", "Vite", "CSS"],
+    githubLink: "https://github.com/Nuwanthi608/FinTrack.git",
+    icon: "💰"
   }
 ];
 
