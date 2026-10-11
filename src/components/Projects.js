@@ -41,42 +41,46 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="container" style={{ padding: '40px 20px', maxWidth: '1100px', margin: '0 auto' }}>
-      <h2 style={{ color: '#ffb703', fontSize: '2rem', marginBottom: '30px', textAlign: 'center' }}>
+    <div style={{ padding: '50px 20px', maxWidth: '1000px', margin: '0 auto' }}>
+      <h2 style={{ color: '#fbbf24', fontSize: '2.5rem', marginBottom: '40px', textAlign: 'center', fontWeight: '800' }}>
         🚀 My Projects
       </h2>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '25px' }}>
+      
+      {/* Grid template column එක repeat(auto-fit, minmax(450px, 1fr)) දීලා තියෙන්නේ එක පේළියට 2ක් විතරක් එන්න */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(440px, 1fr))', gap: '30px' }}>
         {projects.map((project, index) => (
           <div key={index} style={{
             backgroundColor: 'rgba(255, 255, 255, 0.08)',
-            backdropFilter: 'blur(10px)',
-            borderRadius: '12px',
-            padding: '24px',
+            backdropFilter: 'blur(12px)',
+            borderRadius: '16px',
+            padding: '30px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
-            border: '1px solid rgba(255, 183, 3, 0.2)',
-            boxShadow: '0 4px 15px rgba(0,0,0,0.3)'
+            border: '1px solid rgba(251, 191, 36, 0.25)',
+            boxShadow: '0 8px 25px rgba(0,0,0,0.3)',
+            transition: 'transform 0.3s ease'
           }}>
             <div>
-              <h3 style={{ color: '#ffffff', fontSize: '1.25rem', marginBottom: '12px', fontWeight: 'bold' }}>
+              <h3 style={{ color: '#ffffff', fontSize: '1.4rem', marginBottom: '14px', fontWeight: 'bold', lineHeight: '1.4' }}>
                 {project.title}
               </h3>
-              <p style={{ color: '#e2e8f0', fontSize: '0.9rem', lineHeight: '1.6', marginBottom: '16px' }}>
+              <p style={{ color: '#e2e8f0', fontSize: '0.98rem', lineHeight: '1.7', marginBottom: '20px' }}>
                 {project.description}
               </p>
             </div>
             
             <div>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '22px' }}>
                 {project.technologies.map((tech, techIndex) => (
                   <span key={techIndex} style={{
-                    backgroundColor: 'rgba(255, 183, 3, 0.15)',
-                    color: '#ffb703',
-                    fontSize: '0.75rem',
-                    padding: '4px 10px',
+                    backgroundColor: 'rgba(251, 191, 36, 0.15)',
+                    color: '#fbbf24',
+                    fontSize: '0.8rem',
+                    padding: '5px 12px',
                     borderRadius: '20px',
-                    fontWeight: '600'
+                    fontWeight: '600',
+                    border: '1px solid rgba(251, 191, 36, 0.3)'
                   }}>
                     {tech}
                   </span>
@@ -89,14 +93,14 @@ function Projects() {
                 rel="noopener noreferrer"
                 style={{
                   display: 'inline-block',
-                  backgroundColor: '#ffb703',
-                  color: '#03071e',
-                  padding: '8px 16px',
-                  borderRadius: '6px',
-                  fontSize: '0.85rem',
+                  backgroundColor: '#fbbf24',
+                  color: '#0f3460',
+                  padding: '10px 20px',
+                  borderRadius: '8px',
+                  fontSize: '0.9rem',
                   fontWeight: 'bold',
                   textDecoration: 'none',
-                  transition: 'background 0.3s'
+                  boxShadow: '0 4px 12px rgba(251, 191, 36, 0.3)'
                 }}
               >
                 📁 View on GitHub →
