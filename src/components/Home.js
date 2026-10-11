@@ -37,21 +37,7 @@ function Home() {
               Looking for internship opportunities to improve my skills and contribute to real projects.
             </p>
 
-            {/* Quick Stats */}
-            <div className="quick-stats">
-              <div className="stat-item">
-                <span className="stat-number">5+</span>
-                <span className="stat-label">Projects</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">4+</span>
-                <span className="stat-label">Certificates</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">8+</span>
-                <span className="stat-label">Technologies</span>
-              </div>
-            </div>
+            
             
             <div className="home-buttons">
               <a href="/projects" className="btn-primary">📁 View My Work →</a>
