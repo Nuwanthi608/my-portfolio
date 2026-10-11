@@ -23,7 +23,7 @@ const Certificates = () => {
     {
       title: "Python for Beginners",
       issuer: "University of Moratuwa (CODL)",
-      date: "Mar 2024",
+      date: "Mar 2025",
       description: "Completed online learning programme conducted by the Department of Computer Science & Engineering."
     }
   ];
