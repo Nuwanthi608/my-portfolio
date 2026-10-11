@@ -29,20 +29,29 @@ const Certificates = () => {
   ];
 
   return (
-    <section id="certificates" className="py-12 px-6 max-w-5xl mx-auto">
-      <h2 className="text-3xl font-bold mb-6 text-gray-800">Licenses & Certifications</h2>
+    <div className="container" style={{ padding: '40px 20px', maxWidth: '1000px', margin: '0 auto' }}>
+      <h2 style={{ color: '#ffb703', fontSize: '2rem', marginBottom: '25px', textAlign: 'center' }}>
+        📜 Licenses & Certifications
+      </h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
         {certificationsList.map((cert, index) => (
-          <div key={index} className="bg-white shadow-md rounded-lg p-6 border-l-4 border-blue-500">
-            <h3 className="text-xl font-bold text-gray-800">{cert.title}</h3>
-            <p className="text-sm font-semibold text-blue-600 mt-1">{cert.issuer}</p>
-            <p className="text-xs text-gray-400 mb-3">Issued {cert.date}</p>
-            <p className="text-gray-600 text-sm">{cert.description}</p>
+          <div key={index} style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+            backdropFilter: 'blur(10px)',
+            borderRadius: '12px',
+            padding: '20px',
+            borderLeft: '4px solid #ffb703',
+            boxShadow: '0 4px 15px rgba(0,0,0,0.3)'
+          }}>
+            <h3 style={{ color: '#ffffff', fontSize: '1.2rem', marginBottom: '8px', fontWeight: 'bold' }}>{cert.title}</h3>
+            <p style={{ color: '#ffb703', fontSize: '0.95rem', fontWeight: 'bold', margin: '4px 0' }}>{cert.issuer}</p>
+            <p style={{ color: '#cbd5e0', fontSize: '0.85rem', marginBottom: '12px' }}>📅 Issued: {cert.date}</p>
+            <p style={{ color: '#f7fafc', fontSize: '0.9rem', lineHeight: '1.5' }}>{cert.description}</p>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
