@@ -766,4 +766,420 @@ footer {
   padding: 0.2rem 0.8rem;
   border-radius: 20px;
 }
+
+/* Skills Category */
+.skills-category {
+  margin-bottom: 1.5rem;
+}
+
+.skills-category h4 {
+  color: #1e4a76;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  padding-left: 0.5rem;
+  border-left: 4px solid #fbbf24;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 0.5rem 0 0 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #1a4a7a;
+  padding: 0.5rem 1.2rem;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: default;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.skills-list li:hover {
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+}
+
+/* Education Detail */
+.education-detail {
+  background: #f0f9ff;
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  margin: 0.5rem 0 1rem 0;
+  border-left: 4px solid #3b82f6;
+}
+
+.education-text {
+  color: #1e293b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Aspirations */
+.aspirations {
+  background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+  padding: 1.5rem;
+  border-radius: 24px;
+  margin-top: 1.8rem;
+  border-left: 5px solid #3b82f6;
+  transition: all 0.3s ease;
+}
+
+.aspirations:hover {
+  transform: translateX(8px);
+}
+
+/* =============================================
+   ADVANCED HOME SECTION
+   ============================================= */
+
+.home-section {
+  background: linear-gradient(135deg, #0f3460 0%, #1e4a76 50%, #2563eb 100%);
+  border-radius: 32px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.8s ease;
+}
+
+.home-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.home-row {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+/* Left Side - Image */
+.home-image-col {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.image-frame {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-photo-home {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  z-index: 2;
+  animation: float 3s ease-in-out infinite;
+}
+
+.profile-photo-home:hover {
+  transform: scale(1.03) translateY(-5px);
+  border-color: #fbbf24;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.4);
+}
+
+.image-glow {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(135deg, #fbbf24, #3b82f6, #8b5cf6);
+  border-radius: 40px;
+  opacity: 0.3;
+  filter: blur(20px);
+  z-index: 1;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.2; filter: blur(15px); }
+  50% { opacity: 0.4; filter: blur(25px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Right Side - Text */
+.home-text-col {
+  flex: 1.2;
+  min-width: 300px;
+}
+
+.home-badge {
+  display: inline-block;
+  background: rgba(251, 191, 36, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  color: #fbbf24;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.hello-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #c7d2fe;
+  letter-spacing: 2px;
+}
+
+.home-name {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  animation: fadeInUp 0.8s ease 0.3s both;
+}
+
+.name-highlight {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff, #fbbf24, #90cdf4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: gradientShift 3s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.student-badge {
+  display: inline-block;
+  background: rgba(59, 130, 246, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 0.6rem 1.3rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  color: #bfdbfe;
+  margin: 0.8rem 0;
+  border: 1px solid rgba(59, 130, 246, 0.5);
+  font-weight: 500;
+  animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.home-description {
+  font-size: 1rem;
+  color: #e2e8f0;
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+  max-width: 500px;
+  animation: fadeInUp 0.8s ease 0.5s both;
+}
+
+/* Quick Stats */
+.quick-stats {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease 0.6s both;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fbbf24;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #c7d2fe;
+  margin-top: 0.3rem;
+  font-weight: 500;
+}
+
+/* Buttons */
+.home-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s ease 0.7s both;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #0f3460;
+  padding: 0.8rem 1.8rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(251, 191, 36, 0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-outline:hover {
+  border-color: #fbbf24;
+  color: #fbbf24;
+  transform: translateY(-3px);
+  background: rgba(251, 191, 36, 0.1);
+}
+
+/* Social Buttons */
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease 0.8s both;
+}
+
+.social-icon {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1.2rem;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.social-icon:hover {
+  background: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+  transform: translateY(-2px);
+  border-color: #fbbf24;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .home-section {
+    padding: 2rem;
+  }
+  
+  .home-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .home-text-col {
+    text-align: center;
+  }
+  
+  .home-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .home-buttons,
+  .social-buttons,
+  .quick-stats {
+    justify-content: center;
+  }
+  
+  .profile-photo-home {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .name-highlight {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-photo-home {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .name-highlight {
+    font-size: 1.8rem;
+  }
+  
+  .home-name {
+    font-size: 1.5rem;
+  }
+  
+  .btn-primary, .btn-outline {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
 }

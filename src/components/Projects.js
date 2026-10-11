@@ -2,44 +2,29 @@ import React from 'react';
 
 const projects = [
   {
-    id: 1,
-    title: "RepairTrack",
-    description: "A job tracking system for phone and laptop repair shops. Customers can check repair status with a job number, receive SMS updates on status changes, and view spare part cost breakdowns. Built with React, Node.js/Express & MySQL.",
-    technologies: ["React", "Node.js", "Express", "MySQL"],
-    githubLink: "https://github.com/Nuwanthi608/RepairTrack.git",
-    icon: "🔧"
+    title: "Smart Agricultural Machinery Testing & Planning System (FMRC)",
+    technologies: ["React.js", "Node.js", "Express.js", "MySQL", "Git", "GitHub"],
+    description: "Developed a web-based smart agriculture platform for the Farm Machinery Research Centre (FMRC) to streamline machinery testing and operational planning. Built dynamic frontend interfaces and secure RESTful backend APIs to record, track, and manage test records and field operations.",
+    githubLink: "https://github.com/SahanHasmitha/Smart-Agricultural-Machinery-Testing-And-Planning-System-FMRC",
   },
   {
-    id: 2,
-    title: "Smart Agriculture System",
-    description: "Farm testing management system that helps farmers monitor soil conditions, crop health, and weather patterns for better agricultural decisions.",
-    technologies: ["React", "Node.js", "MongoDB", "IoT"],
-    githubLink: "https://github.com/SahanHasmitha/Smart-Agricultural-Machinery-Testing-And-Planning-System-FMRC.git",
-    icon: "🌾"
+    title: "RepairTrack – Phone & Laptop Repair Shop Tracking System",
+    technologies: ["React.js", "Node.js", "Express.js", "MySQL", "JWT", "bcrypt"],
+    description: "Built a full-stack job tracking system featuring real-time dashboard status counts and automated overdue repair alerts. Implemented secure customer status lookup using randomized job numbers and 4-digit phone verification with rate limiting, alongside atomic MySQL database transactions.",
+    githubLink: "https://github.com/Nuwanthi608/RepairTrack",
   },
   {
-    id: 3,
-    title: "Student Event Management System",
-    description: "Web-based application that enables students to browse and register for university events while allowing administrators to manage event details and participant registrations.",
-    technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
-    githubLink: "https://github.com/Nuwanthi608/student-event-management.git",
-    icon: "📅"
+    title: "FinTrack – Personal Finance Management System",
+    technologies: ["React.js", "JavaScript", "HTML5", "CSS3", "Vite", "React Router", "Context API"],
+    description: "Built a responsive web dashboard for personal financial management, expense tracking, and visual analytics. Implemented user authentication, protected routes, and state persistence using Context API and LocalStorage.",
+    githubLink: "https://github.com/Nuwanthi608/FinTrack",
   },
   {
-    id: 4,
-    title: "Calculator App",
-    description: "A beginner-friendly calculator web application with basic arithmetic operations built using HTML, CSS and JavaScript.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    githubLink: "https://github.com/Nuwanthi608/Calculator-App.git",
-    icon: "🧮"
-  },
-  {
-    id: 5,
-    title: "FinTrack",
-    description: "Personal Expense Tracker built to manage daily financial records, authentication, and view expense reports.",
-    technologies: ["React", "JavaScript", "Vite", "CSS"],
-    githubLink: "https://github.com/Nuwanthi608/FinTrack.git",
-    icon: "💰"
+    title: "Personal Developer Portfolio Website",
+    technologies: ["React.js", "JavaScript", "Tailwind CSS", "Netlify", "Git", "GitHub"],
+    description: "Designed and deployed a fully responsive developer portfolio highlighting projects, technical skills, and resume with automated CI/CD deployment workflow using GitHub and Netlify.",
+    githubLink: "https://github.com/Nuwanthi608/my-portfolio",
+    liveLink: "https://nuwanthi-piyathilaka-portfolio.netlify.app/",
   }
 ];
 
@@ -48,17 +33,14 @@ function Projects() {
     <div className="container">
       <h2>My Projects</h2>
       <div className="projects-grid">
-        {projects.map(project => (
-          <div key={project.id} className="project-card">
-            <div className="project-image">
-              <span className="project-icon">{project.icon}</span>
-            </div>
+        {projects.map((project, index) => (
+          <div key={index} className="project-card">
             <div className="project-content">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className="project-tech">
-                {project.technologies.map((tech, index) => (
-                  <span key={index}>{tech}</span>
+                {project.technologies.map((tech, techIndex) => (
+                  <span key={techIndex} className="tech-tag">{tech}</span>
                 ))}
               </div>
               <a 

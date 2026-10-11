@@ -4,8 +4,9 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
+import Certificates from './components/Certificate'; // Certificates import කළා
 import Contact from './components/Contact';
-import Footer from './components/Footer';  // ← මේ line එක එකතු කරන්න
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -17,9 +18,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/certificates" element={<Certificates />} /> {/* Route එක එකතු කළා */}
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />  {/* ← මේ line එක එකතු කරන්න */}
+        <Footer />
       </div>
     </Router>
   );

@@ -17,86 +17,66 @@ function About() {
           </p>
         </div>
         
-        <h3>📜 Certificates & Completed Courses</h3>
-        
-        {/* Certificate 1 */}
-        <div className="completed-course">
-          
-          <div className="course-info">
-            <div className="course-badge">(1) HP LIFE - HP Foundation</div>
-            <p className="course-detail">
-              <strong>IT for Business Success</strong><br />
-              Successfully completed the "IT for Business Success" online course offered by 
-              HP LIFE and HP Foundation.
-              <br />
-              <span className="course-date">📅 Issued: January 2026</span>
-            </p>
-          </div>
-        </div>
-        
-        {/* Certificate 2 */}
-        <div className="completed-course">
-          
-          <div className="course-info">
-            <div className="course-badge">(2) University of Moratuwa</div>
-            <p className="course-detail">
-              <strong>Python for Beginners</strong><br />
-              Successfully completed the "Python for Beginners" online learning programme 
-              conducted by the Department of Computer Science & Engineering, 
-              University of Moratuwa.
-              <br />
-              <span className="course-date">📅 Issued: March 2024</span>
-            </p>
-          </div>
-        </div>
-        
-        {/* Certificate 3 */}
-        <div className="completed-course">
-       
-          <div className="course-info">
-            <div className="course-badge">(3) University of Moratuwa</div>
-            <p className="course-detail">
-              <strong>Web Design for Beginners</strong><br />
-              Successfully completed the "Web Design for Beginners" online learning programme 
-              conducted by the University of Moratuwa. Learned HTML, CSS, and responsive 
-              web design fundamentals.
-              <br />
-              <span className="course-date">📅 Issued: August 2026</span>
-            </p>
-          </div>
-        </div>
-        
-        {/* Certificate 4 */}
-        <div className="completed-course">
-          
-          <div className="course-info">
-            <div className="course-badge">(4)OpenEDG Python Institute</div>
-            <p className="course-detail">
-              <strong>Python Essentials 1</strong><br />
-              Successfully completed the Python Essentials 1 certification by 
-              Cisco Networking Academy & OpenEDG Python Institute.
-              <br />
-              <span className="course-date">📅 Issued: August 2026</span>
-            </p>
-          </div>
-        </div>
-        
         <h3>💻 Technical Skills</h3>
-        <ul className="skills-list">
-          <li>React.js</li>
-          <li>JavaScript</li>
-          <li>HTML5/CSS3</li>
-          <li>Node.js</li>
-          <li>Python</li>
-          <li>Git/GitHub</li>
-          <li>Java</li>
-          <li>MySQL</li>
-        </ul>
+
+        <div className="skills-category">
+          <h4>Programming Languages:</h4>
+          <ul className="skills-list">
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+          </ul>
+        </div>
+
+        <div className="skills-category">
+          <h4>Frontend:</h4>
+          <ul className="skills-list">
+            <li>React.js</li>
+            <li>Next.js</li>
+            <li>Tailwind CSS</li>
+            <li>Bootstrap</li>
+            <li>Vite</li>
+          </ul>
+        </div>
+
+        <div className="skills-category">
+          <h4>Backend:</h4>
+          <ul className="skills-list">
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>RESTful APIs</li>
+            <li>JWT</li>
+            <li>bcrypt</li>
+          </ul>
+        </div>
+
+        <div className="skills-category">
+          <h4>Databases:</h4>
+          <ul className="skills-list">
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+
+        <div className="skills-category">
+          <h4>Tools:</h4>
+          <ul className="skills-list">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Netlify</li>
+            <li>Postman</li>
+            <li>Figma</li>
+            <li>Canva</li>
+          </ul>
+        </div>
         
         <div className="aspirations">
           <h3>🎯 Career Aspirations</h3>
           <p>I aspire to work as a Software Engineer at a global tech company, 
-          building innovative solutions that make a difference in people's lives.</p>
+          building innovative solutions that make a difference in people's lives. 
+          I am passionate about continuous learning and contributing to meaningful projects.</p>
         </div>
       </div>
     </div>

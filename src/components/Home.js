@@ -1,5 +1,5 @@
 import React from 'react';
-import myPhoto from '../me.jpeg';  // src folder එකේ තියෙන photo එක import කරන්න
+import myPhoto from '../me.jpeg';
 
 function Home() {
   return (
@@ -28,12 +28,30 @@ function Home() {
               <span className="name-highlight">Nuwanthi Piyathilaka</span>
             </h1>
             
-            
+            <div className="student-badge">
+              🎓 IT Student | Institute of Technology, University of Moratuwa
+            </div>
             
             <p className="home-description">
               I'm an IT student at University of Moratuwa. I love building websites and learning new technologies. 
               Looking for internship opportunities to improve my skills and contribute to real projects.
             </p>
+
+            {/* Quick Stats */}
+            <div className="quick-stats">
+              <div className="stat-item">
+                <span className="stat-number">5+</span>
+                <span className="stat-label">Projects</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">4+</span>
+                <span className="stat-label">Certificates</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">8+</span>
+                <span className="stat-label">Technologies</span>
+              </div>
+            </div>
             
             <div className="home-buttons">
               <a href="/projects" className="btn-primary">📁 View My Work →</a>
@@ -41,9 +59,8 @@ function Home() {
             </div>
             
             <div className="social-buttons">
-            <a href="https://github.com/Nuwanthi608" target="_blank" rel="noreferrer" className="social-icon">💻 GitHub</a>
-  
-            <a href="https://www.linkedin.com/in/nuwanthi-piyathilaka-396a1335b/" target="_blank" rel="noreferrer" className="social-icon">🔗 LinkedIn</a>
+              <a href="https://github.com/Nuwanthi608" target="_blank" rel="noreferrer" className="social-icon">💻 GitHub</a>
+              <a href="https://www.linkedin.com/in/nuwanthi-piyathilaka-396a1335b/" target="_blank" rel="noreferrer" className="social-icon">🔗 LinkedIn</a>
             </div>
           </div>
         </div>
