@@ -76,7 +76,7 @@ function About() {
         
         <div className="aspirations">
           <h3>🎯 Career Aspirations</h3>
-          <p>My ambition is to work as a Full-Stack Software Engineer 
+          <p>My ambition is to work as a  Software Engineer 
             in an innovative technology environment. I am actively 
             seeking internship opportunities where I can apply my web
             development skills, contribute to real-world software solutions, 
