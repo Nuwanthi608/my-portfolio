@@ -7,15 +7,12 @@ function About() {
         <h2>About Me</h2>
         
         <h3>📚 Educational Background</h3>
-        <p>🎓 IT Student at Institute of Technology, University of Moratuwa</p>
-        
         <div className="education-detail">
           <p className="education-text">
-            I am an Information Technology undergraduate at the Institute of Technology,
-            University of Moratuwa (ITUM). I am a passionate Full-Stack Developer
-            with hands-on experience in building responsive web applications using
-            React.js, Node.js, Express.js, and MySQL. I love solving real-world problems
-            through clean code, modern web design, and structured databases.
+            I am an IT undergraduate at the Institute of Technology, University of Moratuwa (ITUM). 
+            I am a passionate Full-Stack Developer with hands-on experience in building responsive 
+            web applications using <strong>React.js, Node.js, Express.js, and MySQL.</strong> 
+            I love solving real-world problems through clean code, modern web design, and structured databases.
           </p>
         </div>
         
@@ -76,13 +73,26 @@ function About() {
         
         <div className="aspirations">
           <h3>🎯 Career Aspirations</h3>
-          <p>My ambition is to work as a  Software Engineer 
-            in an innovative technology environment. I am actively 
-            seeking internship opportunities where I can apply my web
-            development skills, contribute to real-world software solutions, 
-            learn from industry experts, and grow into a complete software engineering
-            professional.</p>
+          <p>
+            My ambition is to work as a <strong>Software Engineer</strong> in an innovative technology environment. 
+            I am actively seeking internship opportunities where I can apply my web development skills, 
+            contribute to real-world software solutions, learn from industry experts, and grow into a 
+            complete software engineering professional.
+          </p>
         </div>
+
+        {/* LinkedIn Connect Button */}
+        <div className="linkedin-connect">
+          <a 
+            href="https://www.linkedin.com/in/nuwanthi-piyathilaka-396a1335b/" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="linkedin-btn"
+          >
+            🔗 Connect with me on LinkedIn
+          </a>
+        </div>
+
       </div>
     </div>
   );

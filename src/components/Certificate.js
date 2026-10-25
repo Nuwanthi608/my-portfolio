@@ -1,58 +1,118 @@
-import React from 'react';
+import React, { useState } from 'react';
+import cert1 from '../ceti1.png';
+import cert2 from '../ceti2.png';
+import cert3 from '../ceti3.png';
+import cert4 from '../ceti4.png';
+import cert5 from '../ceti5.png';
 
-const Certificates = () => {
-  const certificationsList = [
-    {
-      title: "Web Design for Beginners",
-      issuer: "University of Moratuwa (CODL)",
-      date: "Aug 2026",
-      description: "Successfully completed online learning programme in Web Design for Beginners."
-    },
-    {
-      title: "Python Essentials 1",
-      issuer: "OpenEDG Python Institute & Cisco Networking Academy",
-      date: "Aug 2026",
-      description: "Completed Python programming essentials and problem-solving concepts."
-    },
-    {
-      title: "IT for Business Success",
-      issuer: "HP LIFE",
-      date: "Jan 2026",
-      description: "Gained knowledge in selecting suitable technology and IT strategies for business success."
-    },
-    {
-      title: "Python for Beginners",
-      issuer: "University of Moratuwa (CODL)",
-      date: "Mar 2025",
-      description: "Completed online learning programme conducted by the Department of Computer Science & Engineering."
-    }
-  ];
+function Certificates() {
+  const [selectedImg, setSelectedImg] = useState(null);
 
   return (
-    <div className="container" style={{ padding: '40px 20px', maxWidth: '1000px', margin: '0 auto' }}>
-      <h2 style={{ color: '#ffb703', fontSize: '2rem', marginBottom: '25px', textAlign: 'center' }}>
-        📜 Licenses & Certifications
-      </h2>
-      
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
-        {certificationsList.map((cert, index) => (
-          <div key={index} style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-            backdropFilter: 'blur(10px)',
-            borderRadius: '12px',
-            padding: '20px',
-            borderLeft: '4px solid #ffb703',
-            boxShadow: '0 4px 15px rgba(0,0,0,0.3)'
-          }}>
-            <h3 style={{ color: '#ffffff', fontSize: '1.2rem', marginBottom: '8px', fontWeight: 'bold' }}>{cert.title}</h3>
-            <p style={{ color: '#ffb703', fontSize: '0.95rem', fontWeight: 'bold', margin: '4px 0' }}>{cert.issuer}</p>
-            <p style={{ color: '#cbd5e0', fontSize: '0.85rem', marginBottom: '12px' }}>📅 Issued: {cert.date}</p>
-            <p style={{ color: '#f7fafc', fontSize: '0.9rem', lineHeight: '1.5' }}>{cert.description}</p>
-          </div>
-        ))}
+    <div className="cert-page-wrapper">
+      <div className="cert-header">
+        <h2>📜 Licenses & Certifications</h2>
       </div>
+      
+      <div className="certificates-list">
+        
+        {/* Certificate 1 */}
+        <div className="cert-card-row">
+          <div className="cert-image-box" onClick={() => setSelectedImg(cert1)}>
+             <img src={cert1} alt="Python Programming" style={{ pointerEvents: 'none' }} />
+          </div>
+          <div className="cert-content">
+            <h3>Python Programming</h3>
+            <p className="cert-issuer">Centre for Open & Distance Learning (CODL), University of Moratuwa</p>
+            <p className="cert-date">📅 Issued: Jan 2026</p>
+            <p className="cert-desc">
+              Successfully completed the comprehensive Python Programming online learning programme. 
+              Gained hands-on experience in Python syntax, data structures, and basic programming logic.
+            </p>
+            <a href="https://www.linkedin.com/in/nuwanthi-piyathilaka-396a1335b/" target="_blank" rel="noreferrer" className="cert-btn">Show Credential ↗</a>
+          </div>
+        </div>
+
+        {/* Certificate 2 */}
+        <div className="cert-card-row">
+          <div className="cert-image-box" onClick={() => setSelectedImg(cert2)}>
+             <img src={cert2} alt="Web Design for Beginners" style={{ pointerEvents: 'none' }} />
+          </div>
+          <div className="cert-content">
+            <h3>Web Design for Beginners</h3>
+            <p className="cert-issuer">Centre for Open & Distance Learning (CODL), University of Moratuwa</p>
+            <p className="cert-date">📅 Issued: Aug 2026</p>
+            <p className="cert-desc">
+              Learned the fundamentals of web design including HTML, CSS, and responsive layouts. 
+              Built basic web pages and understood modern front-end development concepts.
+            </p>
+            <a href="https://www.linkedin.com/in/nuwanthi-piyathilaka-396a1335b/" target="_blank" rel="noreferrer" className="cert-btn">Show Credential ↗</a>
+          </div>
+        </div>
+
+        {/* Certificate 3 */}
+        <div className="cert-card-row">
+          <div className="cert-image-box" onClick={() => setSelectedImg(cert3)}>
+             <img src={cert3} alt="Python Essentials 1" style={{ pointerEvents: 'none' }} />
+          </div>
+          <div className="cert-content">
+            <h3>Python Essentials 1</h3>
+            <p className="cert-issuer">OpenEDG Python Institute & Cisco Networking Academy</p>
+            <p className="cert-date">📅 Issued: Aug 2026</p>
+            <p className="cert-desc">
+              Mastered the core concepts of Python programming including variables, data types, 
+              control flow, and functions. Certified by Cisco & OpenEDG.
+            </p>
+            <a href="https://www.linkedin.com/in/nuwanthi-piyathilaka-396a1335b/" target="_blank" rel="noreferrer" className="cert-btn">Show Credential ↗</a>
+          </div>
+        </div>
+
+        {/* Certificate 4 */}
+        <div className="cert-card-row">
+          <div className="cert-image-box" onClick={() => setSelectedImg(cert4)}>
+             <img src={cert4} alt="IT for Business Success" style={{ pointerEvents: 'none' }} />
+          </div>
+          <div className="cert-content">
+            <h3>IT for Business Success</h3>
+            <p className="cert-issuer">HP LIFE</p>
+            <p className="cert-date">📅 Issued: Jan 2026</p>
+            <p className="cert-desc">
+              Learned how to choose the best technology for business and how to successfully 
+              integrate technology solutions into business operations.
+            </p>
+            <a href="https://www.linkedin.com/in/nuwanthi-piyathilaka-396a1335b/" target="_blank" rel="noreferrer" className="cert-btn">Show Credential ↗</a>
+          </div>
+        </div>
+
+        {/* Certificate 5 */}
+        <div className="cert-card-row">
+          <div className="cert-image-box" onClick={() => setSelectedImg(cert5)}>
+             <img src={cert5} alt="Python for Beginners" style={{ pointerEvents: 'none' }} />
+          </div>
+          <div className="cert-content">
+            <h3>Python for Beginners</h3>
+            <p className="cert-issuer">University of Moratuwa</p>
+            <p className="cert-date">📅 Issued: Mar 2024</p>
+            <p className="cert-desc">
+              Successfully completed the "Python for Beginners" online learning programme 
+              conducted by the Department of Computer Science & Engineering, University of Moratuwa.
+            </p>
+            <a href="https://www.linkedin.com/in/nuwanthi-piyathilaka-396a1335b/" target="_blank" rel="noreferrer" className="cert-btn">Show Credential ↗</a>
+          </div>
+        </div>
+
+      </div>
+
+      {/* පින්තූරය Click කළාම ලොකුවට පෙන්නන Modal එක */}
+      {selectedImg && (
+        <div className="image-modal" onClick={() => setSelectedImg(null)}>
+          <span className="close-modal">&times;</span>
+          <img src={selectedImg} alt="Certificate Full View" className="modal-img" />
+        </div>
+      )}
+
     </div>
   );
-};
+}
 
 export default Certificates;
