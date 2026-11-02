@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
+import Skills from './components/Skills'; // අලුත් Skills එක
 import Projects from './components/Projects';
-import Certificates from './components/Certificate'; // Certificates import කළා
+import Certificates from './components/Certificate';  // Certificates එක හැදුවා
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
@@ -17,8 +18,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} /> {/* අලුත් Skills Route එක */}
           <Route path="/projects" element={<Projects />} />
-          <Route path="/certificates" element={<Certificates />} /> {/* Route එක එකතු කළා */}
+          <Route path="/certificates" element={<Certificates />} /> 
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
